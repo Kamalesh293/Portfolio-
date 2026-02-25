@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kamalesh V - Aspiring Data Professional & AI/ML Engineer. Building scalable data pipelines and AI-driven solutions.">
+    <meta name="keywords" content="Data Engineer, AI/ML Engineer, Python, ETL, NLP, Machine Learning, Data Science">
+    <meta name="author" content="Kamalesh V">
+    <meta property="og:title" content="Kamalesh V | Data Professional & AI/ML Engineer">
+    <meta property="og:description" content="Building scalable data pipelines and AI-driven solutions">
+    <meta property="og:type" content="website">
+    <title>Kamalesh V | Data Professional & AI/ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__logo">Kamalesh<span>.</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg></button>
+            </div>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="nav__toggle" id="nav-toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__greeting reveal-fade">Hello, I'm</span>
+                    <h1 class="hero__name reveal-fade" data-delay="100">Kamalesh V</h1>
+                    <p class="hero__title" id="typed-title"></p>
+                    <p class="hero__tagline reveal-fade" data-delay="400">Building scalable data pipelines and AI-driven
+                        solutions</p>
+                    <div class="hero__buttons reveal-fade" data-delay="500">
+                        <a href="#projects" class="btn btn--primary btn--glow">View Projects</a>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                        <a href="https://github.com/Kamalesh293" target="_blank" rel="noopener" class="btn btn--icon"
+                            aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__decoration">
+                        <div class="hero__circle"></div>
+                        <div class="hero__ring"></div>
+                        <div class="hero__code">
+                            <span class="code__line"><span class="code__keyword">def</span> <span
+                                    class="code__function">build_pipeline</span>():</span>
+                            <span class="code__line"> data = <span class="code__function">extract</span>(<span
+                                    class="code__string">"source"</span>)</span>
+                            <span class="code__line"> clean = <span class="code__function">transform</span>(data)</span>
+                            <span class="code__line"> <span class="code__keyword">return</span> <span
+                                    class="code__function">load</span>(clean)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll"><a href="#about" class="scroll-indicator"><span>Scroll</span><svg width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></a></div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section__title reveal">About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="reveal">Aspiring <strong>data professional</strong> skilled in Python, SQL, ETL
+                            pipelines, data analysis, and applied machine learning. Experienced in building reliable
+                            data workflows, automating ETL and reporting, creating dashboards, and supporting
+                            <strong>AI-driven applications</strong> across analytics and product use cases.</p>
+                        <p class="reveal">Interested in working on scalable <strong>data systems</strong>, cloud
+                            platforms, and data-driven problem solving. Currently building voice-based AI applications
+                            and deploying production-ready ML pipelines.</p>
+                        <div class="about__highlights reveal">
+                            <div class="highlight">
+                                <span class="highlight__number counter" data-target="3">0</span><span
+                                    class="highlight__plus">+</span>
+                                <span class="highlight__label">Work Experiences</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight__number counter" data-target="5">0</span><span
+                                    class="highlight__plus">+</span>
+                                <span class="highlight__label">Projects</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight__number counter" data-target="4">0</span><span
+                                    class="highlight__plus">+</span>
+                                <span class="highlight__label">Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section section--alt" id="skills">
+            <div class="container">
+                <h2 class="section__title reveal">Skills</h2>
+                <div class="skills__grid">
+                    <div class="skill-category reveal" data-delay="0">
+                        <div class="skill-category__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-category__tags"><span class="skill-tag">Python</span><span
+                                class="skill-tag">SQL</span></div>
+                    </div>
+                    <div class="skill-category reveal" data-delay="50">
+                        <div class="skill-category__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                            <h3>Data Engineering</h3>
+                        </div>
+                        <div class="skill-category__tags"><span class="skill-tag">ETL Pipelines</span><span
+                                class="skill-tag">Data Preprocessing</span><span class="skill-tag">Data Storage &
+                                Retrieval</span></div>
+                    </div>
+                    <div class="skill-category reveal" data-delay="100">
+                        <div class="skill-category__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skill-category__tags"><span class="skill-tag">MySQL</span><span
+                                class="skill-tag">MongoDB</span></div>
+                    </div>
+                    <div class="skill-category reveal" data-delay="150">
+                        <div class="skill-category__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                            <h3>AI / ML</h3>
+                        </div>
+                        <div class="skill-category__tags"><span class="skill-tag">Scikit-learn</span><span
+                                class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span
+                                class="skill-tag">NLP</span><span class="skill-tag">TensorFlow</span><span
+                                class="skill-tag">Keras</span></div>
+                    </div>
+                    <div class="skill-category reveal" data-delay="200">
+                        <div class="skill-category__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                            <h3>Visualization</h3>
+                        </div>
+                        <div class="skill-category__tags"><span class="skill-tag">Power BI</span><span
+                                class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span></div>
+                    </div>
+                    <div class="skill-category reveal" data-delay="250">
+                        <div class="skill-category__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                </path>
+                            </svg>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-category__tags"><span class="skill-tag">VS Code</span><span
+                                class="skill-tag">Excel</span><span class="skill-tag">GitHub</span><span
+                                class="skill-tag">Jupyter</span><span class="skill-tag">Tableau</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <div class="container">
+                <h2 class="section__title reveal">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline__item reveal-left">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3>AI/ML Engineer</h3>
+                                <span class="timeline__company">VoicePlug.ai</span>
+                                <span class="timeline__badge">Current</span>
+                            </div>
+                            <span class="timeline__date">Dec 2025 – Present · Remote</span>
+                            <ul class="timeline__details">
+                                <li>Working on <strong>AI-driven voice-based</strong> applications</li>
+                                <li>Implemented <strong>speech-to-text</strong> followed by metadata extraction from
+                                    voice data</li>
+                                <li>Involved in audio preprocessing, model integration, and deployment support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal-left" data-delay="100">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3>AI/ML Engineer Intern</h3>
+                                <span class="timeline__company">Syncer</span>
+                            </div>
+                            <span class="timeline__date">Apr 2025 – Dec 2025 · Coimbatore, India</span>
+                            <ul class="timeline__details">
+                                <li>Contributing to projects: <strong>PaperScout</strong>, <strong>QuizForge</strong>,
+                                    <strong>Sales Chatbot</strong></li>
+                                <li>Designed NLP pipelines with embeddings, semantic search, and model deployment using
+                                    Flask & Git</li>
+                                <li>Improved model inference time by <strong>15%</strong> through optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal-left" data-delay="200">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3>Data Science Intern</h3>
+                                <span class="timeline__company">Rubixe</span>
+                            </div>
+                            <span class="timeline__date">Sep 2024 – Mar 2025 · Bangalore, India</span>
+                            <ul class="timeline__details">
+                                <li>Built forecasting pipeline for <strong>NewX Services</strong>, improving spare parts
+                                    prediction accuracy by <strong>20%</strong></li>
+                                <li>Automated ETL workflows and dashboards using Python & Power BI, reducing manual
+                                    reporting by <strong>40%</strong></li>
+                                <li>Collaborated with client stakeholders in project delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section section--alt" id="projects">
+            <div class="container">
+                <h2 class="section__title reveal">Projects</h2>
+                <div class="projects__grid">
+                    <article class="project-card reveal" data-delay="0">
+                        <div class="project-card__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                            <div class="project-card__links"><a href="https://github.com/Kamalesh293" target="_blank"
+                                    rel="noopener" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg></a></div>
+                        </div>
+                        <h3 class="project-card__title">Spare Parts Forecasting</h3>
+                        <p class="project-card__subtitle">Client: NewX Services (Rubixe)</p>
+                        <p class="project-card__problem"><strong>Problem:</strong> Inaccurate inventory predictions
+                            leading to stockouts and overstocking</p>
+                        <p class="project-card__solution"><strong>Solution:</strong> Built an end-to-end time-series
+                            forecasting pipeline with automated ETL workflows. Designed interactive dashboards in Python
+                            & Power BI.</p>
+                        <div class="project-card__tech">
+                            <span>Python</span><span>Time-Series</span><span>ETL</span><span>Power BI</span></div>
+                        <p class="project-card__outcome"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Improved prediction by 20%, reduced reporting time by 40%</p>
+                    </article>
+                    <article class="project-card reveal" data-delay="100">
+                        <div class="project-card__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <div class="project-card__links"><a href="https://github.com/Kamalesh293" target="_blank"
+                                    rel="noopener" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg></a></div>
+                        </div>
+                        <h3 class="project-card__title">CareerPathAI – Resume Navigator Bot</h3>
+                        <p class="project-card__problem"><strong>Problem:</strong> Job seekers struggle to match skills
+                            with relevant career opportunities</p>
+                        <p class="project-card__solution"><strong>Solution:</strong> Developed an AI assistant for
+                            resume analysis, skill-gap detection, and interview preparation using embeddings & LLM-based
+                            prompting. Generated skill match scores, personalized learning suggestions, and mock
+                            interview questions.</p>
+                        <div class="project-card__tech">
+                            <span>Python</span><span>Embeddings</span><span>LLM</span><span>Semantic Search</span></div>
+                        <p class="project-card__outcome"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Achieved 90% relevance score in recommendations</p>
+                    </article>
+                    <article class="project-card reveal" data-delay="200">
+                        <div class="project-card__header"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                            <div class="project-card__links"><a href="https://github.com/Kamalesh293" target="_blank"
+                                    rel="noopener" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg></a></div>
+                        </div>
+                        <h3 class="project-card__title">Disease Prediction System</h3>
+                        <p class="project-card__problem"><strong>Problem:</strong> Early disease detection requires
+                            analyzing multiple symptoms efficiently</p>
+                        <p class="project-card__solution"><strong>Solution:</strong> Developed a machine learning model
+                            to predict diseases using classification algorithms. Improved prediction accuracy and
+                            healthcare insights through data preprocessing.</p>
+                        <div class="project-card__tech">
+                            <span>Python</span><span>Scikit-learn</span><span>Classification</span><span>Flask</span>
+                        </div>
+                        <p class="project-card__outcome"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Achieved 92% prediction accuracy</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section class="section" id="certifications">
+            <div class="container">
+                <h2 class="section__title reveal">Certifications & Achievements</h2>
+
+                <h3 class="subsection__title reveal">Certifications</h3>
+                <div class="certifications__grid">
+                    <div class="cert-card reveal" data-delay="0">
+                        <div class="cert-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg></div>
+                        <h3>IABAC Certified Data Scientist</h3>
+                        <p>International Association of Business Analytics Certifications</p>
+                    </div>
+                    <div class="cert-card reveal" data-delay="50">
+                        <div class="cert-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg></div>
+                        <h3>NASSCOM Certified Data Scientist</h3>
+                        <p>National Association of Software and Service Companies</p>
+                    </div>
+                    <div class="cert-card reveal" data-delay="100">
+                        <div class="cert-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg></div>
+                        <h3>PrepInsta – Python & AI</h3>
+                        <p>Comprehensive Python programming and AI fundamentals</p>
+                    </div>
+                    <div class="cert-card reveal" data-delay="150">
+                        <div class="cert-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg></div>
+                        <h3>NPTEL Industry 4.0</h3>
+                        <p>Completed with Distinction</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection__title reveal" style="margin-top: var(--space-2xl);">Achievements</h3>
+                <div class="achievements__grid">
+                    <div class="achievement-item reveal" data-delay="0">
+                        <div class="achievement-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg></div>
+                        <span>Googleathon Participant (2024)</span>
+                    </div>
+                    <div class="achievement-item reveal" data-delay="50">
+                        <div class="achievement-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg></div>
+                        <span>Unstop Hackathon Participant (2024)</span>
+                    </div>
+                    <div class="achievement-item reveal" data-delay="100">
+                        <div class="achievement-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg></div>
+                        <span>Completed NPTEL Industry 4.0 with Distinction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section section--alt" id="education">
+            <div class="container">
+                <h2 class="section__title reveal">Education</h2>
+                <div class="education__grid">
+                    <div class="education__card reveal" data-delay="0">
+                        <div class="education__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg></div>
+                        <div class="education__content">
+                            <h3>B.Tech in AI & Data Science</h3>
+                            <p class="education__institution">SNS College of Engineering</p>
+                            <div class="education__details"><span class="education__cgpa">CGPA: 8.0</span><span
+                                    class="education__year">2022 – 2026 · Coimbatore</span></div>
+                        </div>
+                    </div>
+                    <div class="education__card reveal" data-delay="100">
+                        <div class="education__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg></div>
+                        <div class="education__content">
+                            <h3>HSC – Higher Secondary</h3>
+                            <p class="education__institution">Stanes Anglo Indian Hr. Sec. School</p>
+                            <div class="education__details"><span class="education__cgpa">75%</span><span
+                                    class="education__year">2022 · Coonoor</span></div>
+                        </div>
+                    </div>
+                    <div class="education__card reveal" data-delay="200">
+                        <div class="education__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg></div>
+                        <div class="education__content">
+                            <h3>SSLC – Secondary</h3>
+                            <p class="education__institution">Mrs. Bullmores Matric School</p>
+                            <div class="education__details"><span class="education__cgpa">64%</span><span
+                                    class="education__year">2020 · Coonoor</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section__title reveal">Get In Touch</h2>
+                <p class="contact__subtitle reveal">Feel free to reach out for collaborations or just a friendly hello
+                </p>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <a href="mailto:kamaleshkamalesh3964@gmail.com" class="contact__item reveal" data-delay="0">
+                            <div class="contact__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg></div>
+                            <div class="contact__text"><span class="contact__label">Email</span><span
+                                    class="contact__value">kamaleshkamalesh3964@gmail.com</span></div>
+                        </a>
+                        <a href="tel:+916379392276" class="contact__item reveal" data-delay="50">
+                            <div class="contact__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg></div>
+                            <div class="contact__text"><span class="contact__label">Phone</span><span
+                                    class="contact__value">+91-6379392276</span></div>
+                        </a>
+                        <a href="https://linkedin.com/in/kamalesh-v-" target="_blank" rel="noopener"
+                            class="contact__item reveal" data-delay="100">
+                            <div class="contact__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></div>
+                            <div class="contact__text"><span class="contact__label">LinkedIn</span><span
+                                    class="contact__value">linkedin.com/in/kamalesh-v-</span></div>
+                        </a>
+                        <a href="https://github.com/Kamalesh293" target="_blank" rel="noopener"
+                            class="contact__item reveal" data-delay="150">
+                            <div class="contact__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg></div>
+                            <div class="contact__text"><span class="contact__label">GitHub</span><span
+                                    class="contact__value">github.com/Kamalesh293</span></div>
+                        </a>
+                    </div>
+                    <form class="contact__form reveal" id="contact-form" data-delay="100">
+                        <div class="form__group"><input type="text" id="name" name="name" placeholder="Your Name"
+                                required></div>
+                        <div class="form__group"><input type="email" id="email" name="email" placeholder="Your Email"
+                                required></div>
+                        <div class="form__group"><textarea id="message" name="message" placeholder="Your Message"
+                                rows="5" required></textarea></div>
+                        <button type="submit" class="btn btn--primary btn--full btn--glow">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kamalesh V. All rights reserved.</p>
+            <div class="footer__links">
+                <a href="https://github.com/Kamalesh293" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/kamalesh-v-" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:kamaleshkamalesh3964@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
