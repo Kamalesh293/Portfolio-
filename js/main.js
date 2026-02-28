@@ -110,8 +110,9 @@ function initHeroAnimations() {
         const typedTitle = document.getElementById('typed-title');
         if (typedTitle) {
             new TypeWriter(typedTitle, [
-                'Aspiring Data Professional',
                 'AI/ML Engineer',
+                'Software Engineer',
+                'Aspiring Data Professional',
                 'Building Data Pipelines',
                 'NLP & Semantic Search'
             ], 70, 35, 2500);
